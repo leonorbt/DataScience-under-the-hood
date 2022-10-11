@@ -6,3 +6,4 @@ Pandas are cool
 
 ## Sources
 - https://towardsdatascience.com/gradient-descent-algorithm-a-deep-dive-cf04e8115f21 
+- https://realpython.com/gradient-descent-algorithm-python/ 
