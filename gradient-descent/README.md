@@ -1,5 +1,5 @@
 # Gradient Descent
-Iterative first-order optimisation algorithm used to find a local minimum/maximum (minimizes a cost/loss function). If the function is strictly convex/concave, the minimum/maximum found will be global. It requires the fuction to be differentiable (have a derivative for each point in the domain).
+Iterative first-order optimisation algorithm used to find a local minimum/maximum (minimizes a cost/loss function). If the function is strictly convex/concave, the minimum/maximum found will be global. It requires the fuction to be differentiable (have a derivative for each point in the domain). It will take bigger steps when it's far from the minimum/maximum and smaller steps as it get closer.
 
 ## How does it work?
 Let's explain it in minimization of a cost function to simplify, but the logic can also be applied to find a maximum.
