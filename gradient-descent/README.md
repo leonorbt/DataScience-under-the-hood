@@ -23,6 +23,8 @@ If a function is strightly convex it can't have more than 1 minimum. However, it
 
 When the function is not convex nor concave, we risk getting stranded in a saddle point when using the gradient descent, that is, we find a local minimum (or maximum) that we can't exit.
 
+## Gradient Descent applied to a Linear Regression
+Let's put the Gradient Descent in practice by trying to find the parameters of a Linear Regression!
 
 ## Sources
 - https://towardsdatascience.com/gradient-descent-algorithm-a-deep-dive-cf04e8115f21 
