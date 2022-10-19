@@ -26,7 +26,7 @@ When the function is not convex nor concave, we risk getting stranded in a saddl
 ## Gradient Descent applied to a Linear Regression
 Let's put the Gradient Descent in practice by trying to find the parameters of a Linear Regression!
 
-Pandas *are* cool. Very **cool** indeed.
+To get the parameters of the Linear Regression, we want to minimize the **Sum of Squared Residuals (SSR)**.
 
 ## Sources
 - https://towardsdatascience.com/gradient-descent-algorithm-a-deep-dive-cf04e8115f21 
