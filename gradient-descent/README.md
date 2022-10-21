@@ -26,7 +26,20 @@ When the function is not convex nor concave, we risk getting stranded in a saddl
 ## Gradient Descent applied to a Linear Regression
 Let's put the Gradient Descent in practice by trying to find the parameters of a Linear Regression!
 
-To get the parameters of the Linear Regression, we want to minimize the **Sum of Squared Residuals (SSR)**.
+To get the parameters of the Linear Regression, we want to minimize the **Sum of Squared Residuals (SSR)**, which is the squared difference between the real value and the expected value (SSR = Σᵢ(𝑦ᵢ − 𝑓(𝐱ᵢ))²) summed for each observation.
+
+#### Linear Regression
+𝑓(𝑥) = 𝑏₀ + 𝑏₁𝑥, being 𝑏₀ the intercept
+
+#### Cost Function
+It should be SSR or MSE (Mean Squared Error, SSR/n), but the SSR / (2𝑛) is seen as mathematically more convenient as the first derivative will be multiplied by 2 and cancel out the denominator.
+
+### In practice
+1. Get the cost function: C = SSR = Σᵢ(𝑦ᵢ − 𝑓(𝐱ᵢ))² = Σᵢ(𝑦ᵢ − (𝑏₀ + 𝑏₁𝑥ᵢ))² = Σᵢ(𝑦ᵢ − 𝑏₀ - 𝑏₁𝑥ᵢ)² 
+2. Compute the gradient vector, which is the derivative in order of each parameter
+	a) Intercept: ∂𝐶/∂𝑏₀ = 2 * Σᵢ(-𝑦ᵢ + 𝑏₀ + 𝑏₁𝑥ᵢ) = 2 * Σᵢ(𝑏₀ + 𝑏₁𝑥ᵢ - 𝑦ᵢ)
+	b) Parameter: ∂𝐶/∂𝑏₁ =  2 * Σᵢ(𝑏₀ + 𝑏₁𝑥ᵢ - 𝑦ᵢ)𝑥ᵢ
+3. Pandas
 
 ## Sources
 - https://towardsdatascience.com/gradient-descent-algorithm-a-deep-dive-cf04e8115f21 
