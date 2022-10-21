@@ -37,8 +37,8 @@ It should be SSR or MSE (Mean Squared Error, SSR/n), but the SSR / (2𝑛) is se
 ### In practice
 1. Get the cost function: C = SSR = Σᵢ(𝑦ᵢ − 𝑓(𝐱ᵢ))² = Σᵢ(𝑦ᵢ − (𝑏₀ + 𝑏₁𝑥ᵢ))² = Σᵢ(𝑦ᵢ − 𝑏₀ - 𝑏₁𝑥ᵢ)² 
 2. Compute the gradient vector, which is the derivative in order of each parameter
-	a) Intercept: ∂𝐶/∂𝑏₀ = 2 * Σᵢ(-𝑦ᵢ + 𝑏₀ + 𝑏₁𝑥ᵢ) = 2 * Σᵢ(𝑏₀ + 𝑏₁𝑥ᵢ - 𝑦ᵢ)
-	b) Parameter: ∂𝐶/∂𝑏₁ =  2 * Σᵢ(𝑏₀ + 𝑏₁𝑥ᵢ - 𝑦ᵢ)𝑥ᵢ
+- Intercept: ∂𝐶/∂𝑏₀ = 2 * Σᵢ(-𝑦ᵢ + 𝑏₀ + 𝑏₁𝑥ᵢ) = 2 * Σᵢ(𝑏₀ + 𝑏₁𝑥ᵢ - 𝑦ᵢ)
+- Parameter: ∂𝐶/∂𝑏₁ =  2 * Σᵢ(𝑏₀ + 𝑏₁𝑥ᵢ - 𝑦ᵢ)𝑥ᵢ
 3. Pandas
 
 ## Sources
