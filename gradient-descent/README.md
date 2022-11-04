@@ -35,11 +35,10 @@ To get the parameters of the Linear Regression, we want to minimize the **Sum of
 It should be SSR or MSE (Mean Squared Error, SSR/n), but the SSR / (2𝑛) is seen as mathematically more convenient as the first derivative will be multiplied by 2 and cancel out the denominator.
 
 ### In practice
-1. Get the cost function: C = SSR = Σᵢ(𝑦ᵢ − 𝑓(𝐱ᵢ))² = Σᵢ(𝑦ᵢ − (𝑏₀ + 𝑏₁𝑥ᵢ))² = Σᵢ(𝑦ᵢ − 𝑏₀ - 𝑏₁𝑥ᵢ)² 
+1. Get the cost function: C = SSR = Σᵢ(𝑦ᵢ − 𝑓(𝐱ᵢ))² = Σᵢ(𝑦ᵢ − (𝑏₀ + 𝑏₁𝑥ᵢ))² = Σᵢ(𝑦ᵢ − 𝑏₀ - 𝑏₁𝑥ᵢ)² --> moved to MSE 
 2. Compute the gradient vector, which is the derivative in order of each parameter
 - Intercept: ∂𝐶/∂𝑏₀ = 2 * Σᵢ(-𝑦ᵢ + 𝑏₀ + 𝑏₁𝑥ᵢ) = 2 * Σᵢ(𝑏₀ + 𝑏₁𝑥ᵢ - 𝑦ᵢ)
 - Parameter: ∂𝐶/∂𝑏₁ =  2 * Σᵢ(𝑏₀ + 𝑏₁𝑥ᵢ - 𝑦ᵢ)𝑥ᵢ
-3. Pandas
 
 ## Sources
 - https://towardsdatascience.com/gradient-descent-algorithm-a-deep-dive-cf04e8115f21 
